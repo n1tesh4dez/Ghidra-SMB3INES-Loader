@@ -1,4 +1,4 @@
-package inesloader;
+package smb3inesloader;
 
 import java.io.IOException;
 

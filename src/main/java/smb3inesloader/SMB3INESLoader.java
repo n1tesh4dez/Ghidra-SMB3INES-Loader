@@ -1,4 +1,4 @@
-package inesloader;
+package smb3inesloader;
 
 import inesloader.SMB3Symbols;
 import inesloader.SMB3Symbols.Symbol;
