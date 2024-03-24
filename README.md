@@ -1,6 +1,7 @@
 ## Ghidra Super Mario Bros. 3 NES ROM Loader
 
 A loader for Ghidra supporting the Super Mario Bros. 3 NES ROM
+This version works with Ghidra 10.0 and Java 17
 
 ## Building
 - Ensure you have ``JAVA_HOME`` set to the path of your JDK 11+ installation.
@@ -16,3 +17,5 @@ A loader for Ghidra supporting the Super Mario Bros. 3 NES ROM
 - Start Ghidra and use the "Install Extensions" dialog (``File -> Install Extensions...``).
 - Press the ``+`` button in the upper right corner.
 - Select the zip file in the file browser, then restart Ghidra.
+
+
