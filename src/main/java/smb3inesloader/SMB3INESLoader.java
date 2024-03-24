@@ -142,7 +142,7 @@ public class SMB3INESLoader extends AbstractLibrarySupportLoader {
         for (Symbol[] arr : SMB3Symbols.SMB3_MANUAL_SYMS) {
             for (Symbol s : arr) {
                 try {
-                    api.createLabel(api.toAddr(s.addr), s.name, true);
+                    api.createLabel(api.toAddr(s.getAddr()), s.getName(), true);
                 } catch (Exception e) {
                     Msg.error(this, e.getMessage());
                 }
@@ -151,10 +151,10 @@ public class SMB3INESLoader extends AbstractLibrarySupportLoader {
         for (BankSymbol[] arr : SMB3AutoSymbols.SMB3_AUTO_SYMS) {
             for (BankSymbol s :  arr) {
                 try {
-                    if (s.bank < 30) {
-                        api.createLabel(api.toAddr(String.format("bank%03d::0x%X", s.bank, s.addr)), s.name, true);
+                    if (s.getBank()< 30) {
+                        api.createLabel(api.toAddr(String.format("bank%03d::0x%X", s.getBank(), s.getAddr())), s.getName(), true);
                     } else {
-                        api.createLabel(api.toAddr(s.addr), s.name, true);
+                        api.createLabel(api.toAddr(s.getAddr()), s.getName(), true);
                     }
                 } catch (Exception e) {
                     Msg.error(this, e.getMessage());

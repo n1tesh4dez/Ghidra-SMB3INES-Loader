@@ -8,9 +8,29 @@ public class SMB3Symbols {
             this.name = name;
             this.addr = addr;
         }
+
+        public String getName() {
+            return name;
+        }
+
+        public int getAddr() {
+            return addr;
+        }
     }
 
     public static class BankSymbol {
+        public String getName() {
+            return name;
+        }
+
+        public int getAddr() {
+            return addr;
+        }
+
+        public int getBank() {
+            return bank;
+        }
+
         String name;
         int addr;
         int bank;
